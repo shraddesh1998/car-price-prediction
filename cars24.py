@@ -1,5 +1,5 @@
 #-- coding: utf-8 --
-matplotlib inline
+matplotlib in line
 
 
 import pandas as pd
