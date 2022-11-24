@@ -249,12 +249,11 @@ sns.set(rc= {'figure.figsize' :(15.7 , 10.27)})
 import pywedge as pw
 
 
-
 mc=pw.Pywedge_Charts(cars,c=None,y='Sales_Price')
 
 
-
-charts=mc.make_charts()
+st.header("Pywedge Charts")
+st.plot(mc.make_charts())
 
 
 
