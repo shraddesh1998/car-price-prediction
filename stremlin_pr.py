@@ -1,14 +1,31 @@
-import pandas as pd 
+import pandas as pd
 import streamlit as st
 import plotly.express as px
-import plotly.figure_factory as ff
+from plotly import express
 
 st.set_page_config(page_title= "CARS24 DASHBOARD" ,
-                page_icon= ":Plots:" ,
+                page_icon= "Plots:" ,
                 layout= "wide")
 
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{ 
+             background-image: url("https://www.moneycontrol.com/news/india/cars24-introduces-pre-owned-two-wheeler-sales-on-its-platform-5287941.html");
+             background-attachment: fixed;
+	     background-position: 25% 75%;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
-cars = pd.read_csv("C:/Users/sansk/Downloads/cars_new_1.csv")
+add_bg_from_url()
+
+
+cars = pd.read_csv("C:/Users/admin/Downloads/cars_new_1.csv")
 
 st.dataframe(cars)
 
