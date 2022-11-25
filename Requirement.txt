@@ -17,3 +17,4 @@ statsmodels==0.13.2
 sweetviz==2.1.4
 tensorflow==2.10.0
 streamlit==1.15.1
+plotly.express==0.4.1
